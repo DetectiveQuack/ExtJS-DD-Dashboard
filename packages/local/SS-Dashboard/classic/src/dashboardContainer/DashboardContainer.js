@@ -7,16 +7,17 @@
 Ext.define('SS-Dashboard.dashboardContainer.DashboardContainer', {
     extend: 'Ext.panel.Panel',
 
+    requires:[
+        'SK-Dashboard.dashboardContainer.DashboardContainerController'
+    ],
+
+    controller: 'classic-dashboardcontainer',
+
     xtype: 'SSDashboardContainer',
 
     layout: {
         type: 'card'
-        //uncomment this if performance is an issue, it may imporve performance
-        //deferredRender: true
-    },
-
-    items: [{
-        xtype: 'button',
-        text: 'hello'
-    }]
+            //uncomment this if performance is an issue, it may imporve performance
+            //deferredRender: true
+    }
 });
