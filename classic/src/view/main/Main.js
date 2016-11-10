@@ -18,6 +18,8 @@ Ext.define('SS.view.main.Main', {
     controller: 'main',
     viewModel: 'main',
 
+    layout: 'fit',
+
     items: [{
         xtype: 'SSDashboardContainer'
     }]

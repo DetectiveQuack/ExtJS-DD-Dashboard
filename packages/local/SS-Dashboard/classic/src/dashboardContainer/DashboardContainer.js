@@ -7,7 +7,7 @@
 Ext.define('SS-Dashboard.dashboardContainer.DashboardContainer', {
     extend: 'Ext.panel.Panel',
 
-    requires:[
+    requires: [
         'SK-Dashboard.dashboardContainer.DashboardContainerController'
     ],
 
@@ -19,5 +19,12 @@ Ext.define('SS-Dashboard.dashboardContainer.DashboardContainer', {
         type: 'card'
             //uncomment this if performance is an issue, it may imporve performance
             //deferredRender: true
-    }
+    },
+
+    items: [{
+        xtype: 'SSCarousel',
+        floating: true,
+        autoShow: true,
+        defaultAlign: 'tl-tl?'
+    }]
 });
